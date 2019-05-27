@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:weight_and_balance/Calculator.dart';
+import 'package:weight_and_balance/calculator.dart';
 import 'package:weight_and_balance/aircraftList.dart';
 
 class CalculatePage extends StatelessWidget {

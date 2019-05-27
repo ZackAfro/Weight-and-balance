@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:weight_and_balance/pages/CalculatePage.dart';
+import 'package:weight_and_balance/pages/calculate-page.dart';
 
 class AircraftList extends StatelessWidget {
   List<Aircraft> aircraft = [];
-
+ 
   AircraftList() {
     aircraft.add(new Aircraft("ZS-SYA", "Cessna 172"));
     aircraft.add(new Aircraft("ZS-SYA", "Diamond DA20"));
