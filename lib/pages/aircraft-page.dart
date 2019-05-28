@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:weight_and_balance/aircraftList.dart';
+import 'package:weight_and_balance/aircraft-list.dart';
 
 class AircraftPage extends StatelessWidget {
   @override

@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:weight_and_balance/aircraftList.dart';
+import 'package:weight_and_balance/aircraft-list.dart';
+import 'package:weight_and_balance/models/aircraft-models.dart';
 import 'package:weight_and_balance/pages/result-page.dart';
+import 'package:weight_and_balance/services/calculator-service.dart';
 
 class Calculator extends StatefulWidget {
   final Aircraft aircraft;
@@ -18,11 +20,12 @@ class Calculator extends StatefulWidget {
 
 class _CalculatorState extends State<Calculator> {
   final _calculatorForm = GlobalKey<FormState>();
-  AircraftInputValues _aircraftValues = AircraftInputValues();
+  AircraftInputValues _aircraftValues = new AircraftInputValues();
+  CalculatorService service = new CalculatorService();
 
   @override
   void initState() {
-    _aircraftValues.fuelMeasurement = FuelMeasurement.lt;
+    _aircraftValues.fuelMeasurement = FuelMeasurement.usg;
     _aircraftValues.weightMeasurement = WeightMeasurement.kg;
     super.initState();
   }
@@ -171,7 +174,7 @@ class _CalculatorState extends State<Calculator> {
                         Navigator.push(
                         context,
                         MaterialPageRoute(
-                          builder: (BuildContext context) => ResultsPage(_aircraftValues),
+                          builder: (BuildContext context) => ResultsPage(service.calculateWeightandBalance(_aircraftValues)),
                         ),
                       );
                       }
@@ -185,22 +188,3 @@ class _CalculatorState extends State<Calculator> {
     );
   }
 }
-
-class AircraftInputValues {
-  WeightMeasurement weightMeasurement;
-  FuelMeasurement fuelMeasurement;
-  double fuel;
-  double frontSeat1;
-  double frontSeat2;
-  double rearSeat1;
-  double rearSeat2;
-  double luggage;
-
-  save() {
-    print('saving user using a web service');
-  }
-}
-
-enum WeightMeasurement { lbs, kg }
-
-enum FuelMeasurement { lt, usg }

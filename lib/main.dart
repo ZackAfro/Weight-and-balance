@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import './pages/aircraft-page.dart';
 
 void main() => runApp(MyApp());
