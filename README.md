@@ -2,7 +2,7 @@
 
 My first flutter project! 
 
-A small application to help me calculate the weight and balance when i go fling. Currently it is only for a Cessna 172 but can easily add more planes.
+A small application to help me calculate the weight and balance when I go flying. Currently it is only for a Cessna 172 but you can easily add more planes.
 
 ## Getting Started
 
