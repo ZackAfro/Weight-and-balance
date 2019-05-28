@@ -1,16 +1,18 @@
 # weight_and_balance
 
-A new Flutter project.
+My first flutter project! 
+
+A small application to help me calculate the weight and balance when i go fling. Currently it is only for a Cessna 172 but can easily add more planes.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+To run this application you will need to clone this repo and also have flutter installed. 
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+flutter start will get the dependencies and run it on a running emulator or a conneced device.
 
 For help getting started with Flutter, view our 
 [online documentation](https://flutter.dev/docs), which offers tutorials, 
 samples, guidance on mobile development, and a full API reference.
+
+Any questions or advice : 
+neilbeukes8@gmail.com

@@ -23,14 +23,6 @@ class _ResultsState extends State<Results> {
     super.initState();
   }
 
-  // Text(_aircraftResults.items[index].item),
-  //  VerticalDivider(),
-  // Text(_aircraftResults.items[index].weight.toStringAsFixed(2)),
-  //  VerticalDivider(),
-  // Text(_aircraftResults.items[index].arm.toStringAsFixed(2)),
-  //  VerticalDivider(),
-  // Text(_aircraftResults.items[index].moment.toStringAsFixed(2))
-
   @override
   Widget build(BuildContext context) {
     return Container(

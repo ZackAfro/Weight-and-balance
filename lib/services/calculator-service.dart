@@ -6,8 +6,6 @@ class CalculatorService{
     AircraftResults results = new AircraftResults();
     AircraftArmValues armValues = new AircraftArmValues();
 
-
-
     if (aircraftInputValues.weightMeasurement == WeightMeasurement.kg){
       print("in if of KG");
       aircraftInputValues.frontSeat1 *= 2.2;
